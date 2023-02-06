@@ -82,6 +82,11 @@ public class HashTree implements Serializable, Map<Object, HashTree>, Cloneable 
      *
      * @param key
      *            name of the new top-level node
+     
+     
+     
+     
+     
      */
     public HashTree(Object key) {
         this(new HashMap<Object, HashTree>(), key);
