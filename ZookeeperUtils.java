@@ -164,13 +164,16 @@ public class ZookeeperUtils {
    *          - CreateMode
    * @returns String
    */
-  System.out.println("error ethe takla ahe");
+  
   
   
   public static String tryToCreateNode(ZooKeeper zk, String path, CreateMode createMode) throws OrbZKFailure {
     String result = null;
     try {
       result = zk.create(path, new byte[0], Ids.OPEN_ACL_UNSAFE, createMode);
+      
+      System.out.println("error ethe takla ahe");
+      
     } catch (KeeperException.NodeExistsException e) {
       LOG.debug("Node " + path + " already exists!");
     } catch (KeeperException e) {
