@@ -140,6 +140,20 @@ public class ZookeeperUtils {
    *          - String
    * @returns String
    */
+  
+  
+  /**
+   * 
+   * @param zk
+   *          - ZooKeeper
+   * @param path
+   *          - String
+   * @param createMode
+   *          - CreateMode
+   * @returns String
+   */
+  System.out.println("error ethe takla ahe");
+  
   public static String tryToCreateNode(ZooKeeper zk, String path) throws OrbZKFailure {
     String result = null;
     try {
@@ -153,17 +167,6 @@ public class ZookeeperUtils {
     }
     return result;
   }
-  
-  /**
-   * 
-   * @param zk
-   *          - ZooKeeper
-   * @param path
-   *          - String
-   * @param createMode
-   *          - CreateMode
-   * @returns String
-   */
   public static String tryToCreateNode(ZooKeeper zk, String path, CreateMode createMode) throws OrbZKFailure {
     String result = null;
     try {
