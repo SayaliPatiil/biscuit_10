@@ -406,6 +406,7 @@ public class ZookeeperUtils {
       }
     } catch (KeeperException.NoNodeException e) {
       LOG.debug("Node " + path + " does not exist!");
+      System.out.println("error ethe ahe");
     } catch (KeeperException e) {
       throw new OrbZKFailure(e);
     } catch (InterruptedException e) {
