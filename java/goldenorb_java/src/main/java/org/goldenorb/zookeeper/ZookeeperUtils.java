@@ -147,6 +147,7 @@ public class ZookeeperUtils {
     } catch (KeeperException.NodeExistsException e) {
       LOG.debug("Node " + path + " already exists!");
     } catch (KeeperException e) {
+      System.out.println("Node " + path + " already exists!");
       throw new OrbZKFailure(e);
     } catch (InterruptedException e) {
       throw new OrbZKFailure(e);
