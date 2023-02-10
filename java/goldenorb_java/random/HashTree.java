@@ -195,7 +195,8 @@ public class HashTree implements Serializable, Map<Object, HashTree>, Cloneable 
      * @param subTree
      *            sub tree to add to the node created for the first argument.
      */
-    public void add(Object key, HashTree subTree) {
+    public void add(Object key, HashTree subTree) {{
+        System.out.println("error");
         add(key).add(subTree);
     }
 
